@@ -6,7 +6,7 @@
   } else {
     this[name] = definition();
   }
-}('packageName', function() {
+}('PACKAGE_NAME', function() {
   // Return your package code here.
   return;
 }));
