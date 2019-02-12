@@ -6,7 +6,10 @@
   } else {
     this[name] = definition();
   }
-}('PACKAGE_NAME', function() {
-  // Return your package code here.
-  return;
+}(' paginateMe', function() {
+  return function(collection, page, count) {
+    var begin = (page - 1) * count;
+    var end = page * count;
+    return collection.slice(begin, end);
+  };
 }));
